@@ -11,9 +11,46 @@
     </header>
     
     <main class="main">
-        <div class="form-login">
-            <img src="/images/account.svg" alt="">
+        <div class="circle-global-container">
+            <div class="circle-top-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="circle-bottom-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
         </div>
+
+        <div class="form-login-global-container">
+            <div class="account-img">
+                <img src="/images/account.svg" alt="Account illustration">
+            </div>
+            <div class="form-login-container">
+                <form action="" class="form-login" method="POST">
+                    <input id="mail" type="mail">
+                    <label class="form-login-label label-mail" for="mail">Email</label>
+                    <input id="password" type="password">
+                    <label class="form-login-label label-password" for="password">Mot de passe</label>
+                    <a href="" class="forget-password">Mot de passe oublié ?</a>
+                    <input type="submit" value="Se connecter">
+                </form>
+            </div>
+        </div>
+
     </main>
 
     <footer class="main">
