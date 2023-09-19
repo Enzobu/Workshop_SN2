@@ -1,1 +1,10 @@
-/*# sourceMappingURL=login.css.map */
+.main .form-login {
+  width: 500px;
+  height: 400px;
+  background: #fffaee;
+  border: solid 5px #648de5;
+  border-radius: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vh;
+}/*# sourceMappingURL=login.css.map */

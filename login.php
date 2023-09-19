@@ -11,7 +11,9 @@
     </header>
     
     <main class="main">
-        
+        <div class="form-login">
+            <img src="/images/account.svg" alt="">
+        </div>
     </main>
 
     <footer class="main">
