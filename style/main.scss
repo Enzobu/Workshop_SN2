@@ -1,0 +1,250 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border-style: border-box;
+	list-style : none;
+	text-decoration: none;
+	font-family: 'Inter', sans-serif;
+	color: #000000;
+    // border: dashed 1px #f00
+
+}
+
+$bleu: #3fbef0;
+$bleuOp: #3fbef085;
+
+.header {
+	position: fixed;
+	width: 100vw;
+	background: #fff;
+	z-index: 10;
+    border-bottom: solid 1px #b0b0b0;
+
+    & .nav {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+        & .nav-list {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding: 1rem 0;
+            width: 100%;
+            z-index: 10;
+            position: relative;
+
+            & .nav-list-left {
+                display: flex;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+                min-width: 305px;
+
+                & .nav-item {
+                    margin: 0 3rem;
+                    $coefTriangle: 5;
+                    position: relative;
+                    transition: .2s;
+                    
+                    & .dropdown-menu-cache {
+                        width: 100%;
+                        height: 57px;
+                        position: absolute;
+                        left: 0;
+                        background: none;
+                        display: none;
+                    }
+
+                    & .dropdown-menu {
+                        width: 100vw;
+                        position: absolute;
+                        // top: -300px;
+                        background: $bleu;
+                        display: none;
+                        transition: .4s;
+                        flex-direction: column;
+                        z-index: 9;
+
+                        & .formation-content-top{
+                            width: 100%;
+                            margin: 1rem 0 0 1rem;
+
+                            & p {
+                                font-size: 2rem;
+                                font-weight: 600;
+                                color: #fff;
+                            }
+
+                            & .baumans-font {
+                                color: #fff;
+                                font-family: 'Baumans', cursive !important;
+                                font-size: 2rem;
+                                font-weight: 400;
+                            }
+                        }
+
+                        & .formation-content-bottom {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin: 1rem 2rem 2rem 2rem;
+
+                            & .title-formation-content {
+                                color: #fff;
+                                font-size: 1.8rem;
+                            }
+
+                            & .txt-formation-content {
+                                margin: .75rem 0 0 2rem;
+                                color: #fff;
+                                line-height: 1.5rem;
+                            }
+
+                        }
+
+                    }
+
+                    & .menu-formations {
+                        left: -48px;
+                    }
+
+                    & .menu-ressourses {
+                        left: -256px;
+                    }
+
+                    & .nav-link {
+                        display: flex;
+
+                        & .triangle {
+                            width: 0;
+                            height: 0;
+                            border-left: calc(50px / $coefTriangle) solid transparent;
+                            border-right: calc(50px / $coefTriangle) solid transparent;
+                            border-bottom: calc(87px / $coefTriangle) solid #b0b0b0; /* Vous pouvez changer la couleur ici */
+                            margin-left: .5rem;
+                            transition: .4s;
+                        }
+                    }
+
+                    &:hover {
+
+                        & .dropdown-menu-cache {
+                            display: block;
+                        }
+
+                        & .dropdown-menu {
+                            display: flex;
+                            top: 57px;
+                        }
+
+                        & .nav-link {
+
+                            & .triangle {
+                                transform: rotate(180deg) translateY(-5px);
+                                border-bottom: calc(87px / $coefTriangle) solid $bleu; /* Vous pouvez changer la couleur ici */
+                            }
+                        }
+                    }
+                }
+            }
+            
+            & .nav-list-center {
+                display: flex;
+                margin-top: auto;
+                margin-bottom: auto;
+
+                & .nav-item {
+                    padding-top: .5rem;
+                    margin: auto 5rem;
+                    
+                    & .logo-txt {
+                        color: $bleu !important;
+                        font-family: 'Baumans', cursive !important;
+                        font-size: 2.8rem;
+                    }
+                }
+
+                & .logo {
+                    margin-left: 1rem !important;
+                    margin-right: auto;
+                    min-width: 140px;
+                }
+
+                
+                
+            }
+            
+            & .nav-list-right {
+                display: flex;
+                margin-left: auto;
+                margin-right: 1rem;
+                margin-top: auto;
+                margin-bottom: auto;
+                min-width: 305px;
+
+                & .nav-item {
+                    margin: 0 1rem;
+                    width: 120px;
+                    text-align: center;
+                    transition: .4s;
+
+                    & a {
+                        transition: .4s;
+                    }
+
+                    &:first-child {
+                        border: solid 1px $bleu;
+                        padding: .5rem;
+                        border-radius: 25px;
+
+                        & a {
+                            color: $bleu !important;
+                        }
+
+                        &:hover {
+                            border: solid 1px #fff;
+                            background: $bleuOp;
+
+                            & a {
+                                color: #fff !important;
+                            }
+                        }
+                    }
+
+                    
+
+                    &:last-child {
+                        border: solid 1px #fff;
+                        padding: .5rem;
+                        border-radius: 25px;
+                        background: $bleu;
+
+                        & a {
+                            color: #fff !important;
+                        }
+
+                        &:hover {
+                            border: solid 1px #fff;
+                            background: $bleuOp;
+
+                            & a {
+                                color: #fff !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+
+.main {
+    padding: 6rem 0 0 0;
+}
