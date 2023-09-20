@@ -4,6 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="/style/page-formation.css">
 <head>
     <?php include("php/head.php"); ?>
     <title>Workshop Sn2</title>
