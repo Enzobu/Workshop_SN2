@@ -158,7 +158,7 @@ body {
   text-align: center;
   transition: 0.4s;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
 }
 .header .nav .nav-list .nav-list-right .nav-item a {
   transition: 0.4s;
