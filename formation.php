@@ -42,14 +42,21 @@ if(empty($_SESSION)) {
             </div>
         </div>
         <div class="container">
-            <div class="first-photo">
-                <img src="images/first-video" alt="photo de la formation">
+            <div class="global-image-formation">
+                <img src="images/first-video" alt="photo de la formation" class="image-formation">
             </div>
-            <div class="second-photo">
-                <img src="images/second-video" alt="photo de la formation">
+            <div class="global-image-formation">
+                <img src="images/second-video" alt="photo de la formation" class="image-formation">
             </div>
-            <div class="first-photo">
-                <img src="images/third-video" alt="photo de la formation">
+            <div class="global-image-formation">
+                <img src="images/third-video" alt="photo de la formation" class="image-formation">
+            </div>
+            <div class="upload">
+                <form action="" class="form-loader">
+                    <label for="file">Ajouter une nouvelle formation :</label>
+                    <input type="file" name="file" id="file" required>
+                    <input type="submit" value="Ajouter !">
+                </form>
             </div>
         </div>
     </main>
