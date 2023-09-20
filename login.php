@@ -23,7 +23,6 @@ if(!empty($_SESSION)) {
 if(!empty($_POST)) {
     // Vérification si les clés 'mail' et 'password' existent dans les données POST
     if(array_key_exists('mail', $_POST) and array_key_exists('password', $_POST) and array_key_exists('isFormer', $_POST)) {
-        echo 'a';
         // Récupération des valeurs des champs 'mail' et 'password' avec la fonction htmlspecialchars() pour éviter les attaques XSS
         $mail = htmlspecialchars($_POST['mail']);
         $password = htmlspecialchars($_POST['password']);

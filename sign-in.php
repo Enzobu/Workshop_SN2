@@ -6,47 +6,53 @@ session_start();
 if(!empty($_SESSION)) {
     // Vérification si la clé 'isAdmin' existe dans la variable de session
     header("Refresh: 0;url=/");
+    die();
 }
 // Vérification si des données ont été envoyées via POST
 if(!empty($_POST)) {
     // Vérification si les clés 'mail' et 'password' existent dans les données POST
-    if(array_key_exists('mail', $_POST) and array_key_exists('password', $_POST) and array_key_exists('isFormer', $_POST)) {
-        echo 'a';
+    if(array_key_exists('name', $_POST) and 
+    array_key_exists('surname', $_POST) and 
+    array_key_exists('age', $_POST) and 
+    array_key_exists('level', $_POST) and 
+    array_key_exists('mail', $_POST) and 
+    array_key_exists('password', $_POST) and 
+    array_key_exists('verif-password', $_POST) and 
+    array_key_exists('isFormer', $_POST)) {
         // Récupération des valeurs des champs 'mail' et 'password' avec la fonction htmlspecialchars() pour éviter les attaques XSS
+        $name = htmlspecialchars($_POST['name']);
+        $surname = htmlspecialchars($_POST['surname']);
+        $age = htmlspecialchars($_POST['age']);
+        $level = htmlspecialchars($_POST['level']);
         $mail = htmlspecialchars($_POST['mail']);
         $password = htmlspecialchars($_POST['password']);
+        $verifPassword = htmlspecialchars($_POST['verif-password']);
         $isFormer = htmlspecialchars($_POST['isFormer']);
 
-        if($isFormer == 0) {
-            // Requête pour récupérer tous les utilisateurs
-            $sql = "SELECT * FROM `users`";
-            $requete = $db->query($sql);
-            $users = $requete->fetchAll();
-        } else if($isFormer == 1) {
-            // Requête pour récupérer tous les utilisateurs
-            $sql = "SELECT * FROM `formers`";
-            $requete = $db->query($sql);
-            $users = $requete->fetchAll();
-        } else {
-            header("Refresh: 0;url=/login.php?error=1");
-        }
-
-        // Boucle sur les utilisateurs pour vérifier les identifiants
-        foreach($users as $user) {
-            // Vérification de la correspondance entre l'adresse e-mail et le mot de passe avec ceux stockés en base de données
-            if($mail == $user['mail_user'] and password_verify($password, $user['password_user'])) {
-                // Début de la session et stockage des informations de l'utilisateur dans des variables de session
-                $_SESSION['id_user'] = $user['id_user'];
-                $_SESSION['name_user'] = $user['name_user'];
-                $_SESSION['surname_user'] = $user['surname_user'];
-                $_SESSION['mail_user'] = $mail;
-                // Redirection vers la page d'administration ('/admin')
+        if($password == $verifPassword) {
+            if($isFormer == 0) {
+                $password = password_hash($password, PASSWORD_DEFAULT);
+                // Requête pour récupérer tous les utilisateurs
+                $sql = "INSERT INTO `users`
+                        (`name_user`, `surname_user`, `mail_user`, `password_user`, `birthYears_user`, `level_user`)
+                        VALUES 
+                        ('$name','$surname','$mail','$password','$age','$level')";
+                $requete = $db->query($sql);
                 header("Refresh: 0;url=/");
-                // Arrêt de l'exécution du script
+                die();
+            } else if($isFormer == 1) {
+                $password = password_hash($password, PASSWORD_DEFAULT);
+                // Requête pour récupérer tous les utilisateurs
+                $sql = "INSERT INTO `formers`
+                        (`name_former`, `surname_former`, `mail_former`, `password_former`, `birth_years_former`, `speciality_former`) 
+                        VALUES 
+                        ('$name','$surname','$mail','$password','$age','$level')";
+                $requete = $db->query($sql);
+                header("Refresh: 0;url=/");
                 die();
             } else {
-                // Redirection vers la page de connexion avec un message d'erreur ('error=0')
-                header("Refresh: 0;url=/login.php?error=0");
+                header("Refresh: 0;url=/login.php?error=1");
+                die();
             }
         }
     }
@@ -58,8 +64,8 @@ $error_message = '';
 // Vérification si la clé 'error' existe dans les données GET
 if(array_key_exists('error', $_GET)) {
     // Vérification de la valeur de 'error'
-    if($_GET['error'] == '0') {
-        $error_message = 'Identifiant ou mot de passe incorrect !';
+    if($_GET['error'] == '1') {
+        $error_message = 'Case non cochée';
     }
 }
 
@@ -115,11 +121,11 @@ if(array_key_exists('error', $_GET)) {
                     <input type="text" id="surname" name="surname" required>
                     <label id="surname-label" class="form-sign-in-label label-surname" for="surname">Prenom</label>
 
-                    <input type="int" id="age" name="age" required>
-                    <label id="age-label" class="form-sign-in-label label-age" for="age">Âge</label>
+                    <input type="date" id="age" name="age" placeholder="" required>
+                    <label id="age-label" class="form-sign-in-label label-age" for="age">Date de naissance</label>
 
                     <input type="text" id="level" name="level" required>
-                    <label id="level-label" class="form-sign-in-label label-level" for="level">Niveau</label>
+                    <label id="level-label" class="form-sign-in-label label-level" for="level">Niveau (spécialité pour formateurs)</label>
 
                     <input type="mail" id="mail" name="mail" required>
                     <label id="mail-label" class="form-sign-in-label label-mail" for="mail">Email</label>
@@ -127,7 +133,7 @@ if(array_key_exists('error', $_GET)) {
                     <input type="password" id="password" name="password" required>
                     <label id="password-label" class="form-sign-in-label label-password" for="password">Mot de passe</label>
 
-                    <input type="verif-password" id="verif-password" name="verif-password" required>
+                    <input type="password" id="verif-password" name="verif-password" required>
                     <label id="verif-password-label" class="form-sign-in-label label-verif-password" for="verif-password">Mot de passe</label>
 
                     <div class="radio-global-container">
@@ -144,6 +150,7 @@ if(array_key_exists('error', $_GET)) {
                         </div>
                     </div>
 
+                    <div class="error-message"><?php echo $error_message; ?></div>
                     <input type="submit" value="Se connecter">
                 </form>
             </div>

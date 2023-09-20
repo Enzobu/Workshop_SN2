@@ -69,17 +69,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // En bas
     LInput3.addEventListener("blur", function () {
         if (LInput3.value === "") {
-        LLabel3.style.top = "135px";
-        LLabel3.style.left = "8px";
-        LLabel3.style.fontSize = "16px";
-        LLabel3.style.color = "#000";
+            LLabel3.style.top = "115px";
+            // LLabel3.style.top = "135px";
+            LLabel3.style.left = "8px";
+            // LLabel3.style.fontSize = "16px";
+            LLabel3.style.fontSize = "12px";
+            LLabel3.style.color = "#000";
         }
     });
 
     // 4
     // En haut
     LInput4.addEventListener("focus", function () {
-        LLabel4.style.top = "180px";
+        LLabel4.style.top = "165px";
         LLabel4.style.left = "6px";
         LLabel4.style.fontSize = "12px";
         LLabel4.style.color = "#000";
@@ -88,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // En bas
     LInput4.addEventListener("blur", function () {
         if (LInput4.value === "") {
-        LLabel4.style.top = "200px";
+        LLabel4.style.top = "180px";
         LLabel4.style.left = "8px";
         LLabel4.style.fontSize = "16px";
         LLabel4.style.color = "#000";
