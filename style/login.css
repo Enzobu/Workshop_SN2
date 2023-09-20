@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  overflow-X: hidden;
 }
 
 .main .form-login-global-container {
@@ -16,7 +16,7 @@ body {
   box-shadow: #b0b0b0 10px 10px 20px;
   position: absolute;
   left: calc((100vw - 500px) / 2);
-  top: calc((105vh - 425px) / 2);
+  top: 8rem;
 }
 .main .form-login-global-container .account-img {
   width: 75px;
@@ -99,9 +99,15 @@ body {
 .main .form-login-global-container .form-login-container .form-login .radio-global-container .radio-container .radio input {
   margin: 0 0.25rem 0 0;
 }
+.main .error-message {
+  max-width: 170px;
+  text-align: center;
+  text-wrap: balance;
+  color: #f00;
+}
 .main .form-sign-in-global-container {
   width: 500px;
-  height: 650px;
+  height: 700px;
   background: #fffaee;
   border-radius: 60px;
   margin-left: auto;
@@ -113,7 +119,7 @@ body {
   box-shadow: #b0b0b0 10px 10px 20px;
   position: absolute;
   left: calc((100vw - 500px) / 2);
-  top: calc((105vh - 650px) / 2);
+  top: 8rem;
 }
 .main .form-sign-in-global-container .account-img {
   width: 75px;
@@ -182,6 +188,22 @@ body {
 }
 .main .form-sign-in-global-container .form-sign-in-container .form-sign-in .form-sign-in-label.label-verif-password {
   top: 392px;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in .radio-global-container {
+  display: flex;
+  flex-direction: column;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in .radio-global-container .radio-container {
+  display: flex;
+  justify-content: space-around;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in .radio-global-container .radio-container .radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in .radio-global-container .radio-container .radio input {
+  margin: 0 0.25rem 0 0;
 }
 .main .circle-global-container .circle-top-container .circle {
   border-radius: 50%;
