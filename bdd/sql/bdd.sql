@@ -6,8 +6,6 @@ CREATE TABLE users(
    password_user VARCHAR(100)  NOT NULL,
    birthYears_user DATE NOT NULL,
    level_user VARCHAR(50)  NOT NULL,
-   is_former_user BOOLEAN NOT NULL,
-   speciality_former_user VARCHAR(100) ,
    PRIMARY KEY(id_user)
 );
 
@@ -44,4 +42,3 @@ CREATE TABLE us3(
    FOREIGN KEY(id_user) REFERENCES users(id_user),
    FOREIGN KEY(id_training) REFERENCES training(id_training)
 );
-
