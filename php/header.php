@@ -71,11 +71,11 @@
             </li>
         </div>
         <div class="nav-list-center">
-            <li class="nav-item logo"><a href="" class="logo-txt">Learn IT</a></li>
+            <li class="nav-item logo"><a href="/" class="logo-txt">Learn IT</a></li>
         </div>
         <div class="nav-list-right">
-            <li class="nav-item"><a href="" class="">Se connecter</a></li>
-            <li class="nav-item"><a href="" class="">S'inscrire</a></li>
+            <li class="nav-item"><a href="/login.php" class="">Se connecter</a></li>
+            <li class="nav-item"><a href="/sign-in.php" class="">S'inscrire</a></li>
         </div>
     </ul>
 </div>

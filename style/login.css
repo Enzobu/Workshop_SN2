@@ -73,16 +73,6 @@ body {
 .main .form-login-global-container .form-login-container .form-login .form-login-label.label-password {
   top: 66px;
 }
-.main .form-login-global-container .form-login-container .form-login input:focus + .form-login-label.label-mail {
-  top: -14px;
-  left: 6px;
-  font-size: 0.9rem;
-}
-.main .form-login-global-container .form-login-container .form-login input:focus + .form-login-label.label-password {
-  top: 49px;
-  left: 6px;
-  font-size: 0.9rem;
-}
 .main .form-login-global-container .form-login-container .form-login .forget-password {
   font-size: 0.75rem;
   color: #5a5a5a;
@@ -176,41 +166,6 @@ body {
 }
 .main .form-sign-in-global-container .form-sign-in-container .form-sign-in .form-sign-in-label.label-verif-password {
   top: 392px;
-}
-.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-name {
-  top: -14px;
-  left: 6px;
-  font-size: 0.9rem;
-}
-.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-surname {
-  top: 52px;
-  left: 6px;
-  font-size: 0.9rem;
-}
-.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-age {
-  top: 115px;
-  left: 6px;
-  font-size: 0.9rem;
-}
-.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-level {
-  top: 180px;
-  left: 6px;
-  font-size: 0.9rem;
-}
-.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-mail {
-  top: 245px;
-  left: 6px;
-  font-size: 0.9rem;
-}
-.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-password {
-  top: 308px;
-  left: 6px;
-  font-size: 0.9rem;
-}
-.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-verif-password {
-  top: 372px;
-  left: 6px;
-  font-size: 0.9rem;
 }
 .main .circle-global-container .circle-top-container .circle {
   border-radius: 50%;
