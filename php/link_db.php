@@ -1,17 +1,13 @@
 <?php
 
-// //constante d'environnement
-// if ($_SERVER['SERVER_NAME'] == 'climat-2030.org') {
-//     define("DBHOST", "bgooodiclimat.mysql.db");
-//     define("DBUSER", "bgooodiclimat");
-//     define("DBPASS", "23marsDonuts");
-//     define("DBNAME", "bgooodiclimat");
-// }
+//constante d'environnement
+if ($_SERVER['SERVER_NAME'] == 'workshop-sn2') {
+    define("DBHOST", "localhost");
+    define("DBUSER", "root");
+    define("DBPASS", "");
+    define("DBNAME", "workshoup_sn2");
+}
 
-define("DBHOST", "localhost");
-define("DBUSER", "root");
-define("DBPASS", "");
-define("DBNAME", "workshoup_sn2");
 
 //DSN de connection
 $dsn = "mysql:dbname=".DBNAME.";host=".DBHOST;
