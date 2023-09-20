@@ -114,6 +114,7 @@ if(array_key_exists('error', $_GET)) {
     </header>
     
     <main class="main">
+        <div class="login-space"></div>
         <div class="circle-global-container">
             <div class="circle-top-container">
                 <div class="circle"></div>
@@ -160,7 +161,7 @@ if(array_key_exists('error', $_GET)) {
         <script src="/js/formLogin.js"></script>
     </main>
 
-    <footer class="main">
+    <footer class="footer">
         <?php include("php/footer.php"); ?>
     </footer>
 </body>

@@ -94,7 +94,7 @@ if(empty($_SESSION)) {
         </div>
     </main>
 
-    <footer class="main">
+    <footer class="footer">
         <?php include("php/footer.php"); ?>
     </footer>
 </body>
