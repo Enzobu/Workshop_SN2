@@ -20,7 +20,7 @@ session_start();
         </div>
         <div class="content">
             <div class="left-menu">
-                <li>Les bases de l’aglorithmie</li>
+                <li>Les bases de l'aglorithmie</li>
                 <li>Introduction à la programmation en python</li>
                 <li>Les bases de la programmation Java</li>
                 <li>Les Fondamentaux du Codage HTML et CSS</li>
