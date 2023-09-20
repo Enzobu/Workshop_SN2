@@ -197,4 +197,59 @@ body {
 
 .main {
   padding: 6rem 0 0 0;
+}
+
+.footer {
+  width: 100vw;
+  border-top: solid 1px #b0b0b0;
+  position: absolute;
+  background: #fff;
+}
+.footer .footer-global-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.footer .footer-global-container .footer-top-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-evenly;
+}
+.footer .footer-global-container .footer-top-container .footer-tips {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer .footer-global-container .footer-top-container .footer-tips .aide, .footer .footer-global-container .footer-top-container .footer-tips .a-propos, .footer .footer-global-container .footer-top-container .footer-tips .reseaux {
+  margin-top: 0.5rem;
+  color: #707070;
+  cursor: pointer;
+}
+.footer .footer-global-container .footer-top-container .footer-tips .aide:hover, .footer .footer-global-container .footer-top-container .footer-tips .a-propos:hover, .footer .footer-global-container .footer-top-container .footer-tips .reseaux:hover {
+  text-decoration: underline;
+}
+.footer .footer-global-container .footer-top-container .footer-tips .img-reseaux {
+  width: 30px;
+}
+.footer .footer-global-container .footer-top-container .footer-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000 !important;
+  margin-bottom: 1rem !important;
+}
+.footer .footer-global-container .footer-top-container .footer-title:hover {
+  text-decoration: none !important;
+}
+.footer .footer-global-container .footer-bottom-container {
+  margin-top: 3rem;
+  margin-bottom: 2em;
+}
+.footer .footer-global-container .footer-bottom-container .mention {
+  color: #707070;
+}
+.footer .footer-global-container .footer-bottom-container .mention:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

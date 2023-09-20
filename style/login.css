@@ -1,3 +1,10 @@
+@charset "UTF-8";
+.main .login-space {
+  height: 505px;
+}
+.main .sign-in-space {
+  height: 780px;
+}
 .main .form-login-global-container {
   width: 500px;
   height: 425px;
@@ -285,56 +292,56 @@
 }
 .main .circle-global-container .circle-bottom-container .circle:nth-child(1) {
   background: #648DE5;
-  bottom: -109px;
+  bottom: 191px; /* ajout de 300 par rapport à la normale */
   right: -37px;
   width: 375px;
   height: 375px;
 }
 .main .circle-global-container .circle-bottom-container .circle:nth-child(2) {
   background: #DEE7F9;
-  bottom: -58px;
+  bottom: 242px;
   right: -68px;
   width: 275px;
   height: 275px;
 }
 .main .circle-global-container .circle-bottom-container .circle:nth-child(3) {
   background: rgba(135, 167, 235, 0.6901960784);
-  bottom: 240px;
+  bottom: 540px;
   right: -34px;
   width: 92px;
   height: 92px;
 }
 .main .circle-global-container .circle-bottom-container .circle:nth-child(4) {
   background: rgba(100, 141, 229, 0.5137254902);
-  bottom: 191px;
+  bottom: 491px;
   right: 37px;
   width: 112px;
   height: 112px;
 }
 .main .circle-global-container .circle-bottom-container .circle:nth-child(5) {
   background: #7C9FE9;
-  bottom: 156px;
+  bottom: 456px;
   right: -34px;
   width: 120px;
   height: 120px;
 }
 .main .circle-global-container .circle-bottom-container .circle:nth-child(6) {
   background: #BECFF4;
-  bottom: 14px;
+  bottom: 314px;
   right: 297px;
   width: 142px;
   height: 142px;
 }
 .main .circle-global-container .circle-bottom-container .circle:nth-child(7) {
   background: #F4F7FD;
-  bottom: -46px;
+  bottom: 254px;
   right: 377px;
   width: 142px;
   height: 142px;
 }
 .main .circle-global-container .circle-bottom-container .circle:nth-child(8) {
   background: #7C9FE9;
-  bottom: -46px;
+  bottom: 254px;
   right: 244px;
   width: 164px;
   height: 164px;
