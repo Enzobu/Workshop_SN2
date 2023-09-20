@@ -74,8 +74,18 @@
             <li class="nav-item logo"><a href="/" class="logo-txt">Learn IT</a></li>
         </div>
         <div class="nav-list-right">
-            <li class="nav-item"><a href="/login.php" class="">Se connecter</a></li>
-            <li class="nav-item"><a href="/sign-in.php" class="">S'inscrire</a></li>
+            <?php
+            if(!empty($_SESSION)) {
+                // Vérification si la clé 'isAdmin' existe dans la variable de session
+                if (array_key_exists('name', $_SESSION)) {
+                    // Vérification si la valeur de 'isAdmin' est égale à 1 (administrateur)
+                    echo "<li class=\"nav-item\"><a href=\"/login.php\" class=\"\">Se connecter</a></li>";
+                }
+            } else {
+                echo "<li class=\"nav-item\"><a href=\"/login.php\" class=\"\">Se connecter</a></li>
+                <li class=\"nav-item\"><a href=\"/sign-in.php\" class=\"\">S'inscrire</a></li>";
+            }
+            ?>
         </div>
     </ul>
 </div>

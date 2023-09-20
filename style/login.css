@@ -4,7 +4,7 @@ body {
 
 .main .form-login-global-container {
   width: 500px;
-  height: 400px;
+  height: 425px;
   background: #fffaee;
   border-radius: 60px;
   margin-left: auto;
@@ -16,7 +16,7 @@ body {
   box-shadow: #b0b0b0 10px 10px 20px;
   position: absolute;
   left: calc((100vw - 500px) / 2);
-  top: calc((105vh - 400px) / 2);
+  top: calc((105vh - 425px) / 2);
 }
 .main .form-login-global-container .account-img {
   width: 75px;
@@ -82,6 +82,22 @@ body {
 .main .form-login-global-container .form-login-container .form-login .forget-password:hover {
   -webkit-text-decoration: underline #5a5a5a;
           text-decoration: underline #5a5a5a;
+}
+.main .form-login-global-container .form-login-container .form-login .radio-global-container {
+  display: flex;
+  flex-direction: column;
+}
+.main .form-login-global-container .form-login-container .form-login .radio-global-container .radio-container {
+  display: flex;
+  justify-content: space-around;
+}
+.main .form-login-global-container .form-login-container .form-login .radio-global-container .radio-container .radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .form-login-global-container .form-login-container .form-login .radio-global-container .radio-container .radio input {
+  margin: 0 0.25rem 0 0;
 }
 .main .form-sign-in-global-container {
   width: 500px;

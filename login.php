@@ -3,12 +3,9 @@
 // Vérification si la variable de session '$_SESSION' est définie
 if(!empty($_SESSION)) {
     // Vérification si la clé 'isAdmin' existe dans la variable de session
-    if (array_key_exists('isAdmin', $_SESSION)) {
+    if (array_key_exists('name', $_SESSION)) {
         // Vérification si la valeur de 'isAdmin' est égale à 1 (administrateur)
-        if($_SESSION['isAdmin'] == 1) {
-            // Redirection vers la page d'administration ('/admin')
-            header("Refresh: 0;url=/admin");
-        }
+        header("Refresh: 0;url=/");
     }
 }
 
@@ -21,7 +18,7 @@ if(!empty($_POST)) {
         $password = htmlspecialchars($_POST['password']);
 
         // Requête pour récupérer tous les utilisateurs
-        $sql = "SELECT * FROM `	utilisateur`";
+        $sql = "SELECT * FROM `users`";
         $requete = $db->query($sql);
         $users = $requete->fetchAll();
 
@@ -31,17 +28,17 @@ if(!empty($_POST)) {
             if($mail == $user['users_mail'] and password_verify($password, $user['users_password'])) {
                 // Début de la session et stockage des informations de l'utilisateur dans des variables de session
                 session_start();
-                $_SESSION['id_utilisateur'] = $user['id_utilisateur'];
-                $_SESSION['nom_utilisateur'] = $user['nom_utilisateur'];
-                $_SESSION['mail_utilisateur	'] = $mail;
-                $_SESSION['isAdmin'] = $user['users_isAdmin'];
+                $_SESSION['id_user'] = $user['id_user'];
+                $_SESSION['name_user'] = $user['name_user'];
+                $_SESSION['surname_user'] = $user['surname_user'];
+                $_SESSION['mail_user'] = $mail;
                 // Redirection vers la page d'administration ('/admin')
-                header("Refresh: 0;url=/admin/");
+                header("Refresh: 0;url=/");
                 // Arrêt de l'exécution du script
                 die();
             } else {
                 // Redirection vers la page de connexion avec un message d'erreur ('error=0')
-                header("Refresh: 0;url=/admin/login.php?error=0");
+                header("Refresh: 0;url=/login.php?error=0");
             }
         }
     }
@@ -117,10 +114,26 @@ if(array_key_exists('error', $_GET)) {
             </div>
             <div class="form-login-container">
                 <form action="" class="form-login" method="POST">
-                    <input id="mail" type="mail">
+                    <input id="mail" type="mail" name="mail">
                     <label id="mail-label" class="form-login-label label-mail label-active" for="mail">Email</label>
-                    <input id="password" type="password">
+
+                    <input id="password" type="password" name="password">
                     <label id="password-label" class="form-login-label label-password label-active" for="password">Mot de passe</label>
+
+                    <div class="radio-global-container">
+                        <div>Formateur ? :</div>
+                        <div class="radio-container">
+                            <div class="radio">
+                                <input id="isFormer0" type="radio" name="isFormer" value="0">
+                                <label class="form-login-label-radio" for="isFormer0">Non</label>
+                            </div>
+                            <div class="radio">
+                                <input id="isFormer1" type="radio" name="isFormer" value="1">
+                                <label class="form-login-label-radio" for="isFormer1">Oui</label>
+                            </div>
+                        </div>
+                    </div>
+
                     <a href="" class="forget-password">Mot de passe oublié ?</a>
                     <input type="submit" value="Se connecter">
                 </form>
