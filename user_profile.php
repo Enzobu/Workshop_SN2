@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if(empty($_SESSION)) {
+    // Vérification si la clé 'isAdmin' existe dans la variable de session
+    header("Refresh: 0;url=/login.php?error=2");
+}
+
 ?>
 
 <!DOCTYPE html>

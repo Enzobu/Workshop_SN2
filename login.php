@@ -15,6 +15,7 @@ if(!empty($_GET)) {
         die();
     }
 }
+
 if(!empty($_SESSION)) {
     // Vérification si la clé 'isAdmin' existe dans la variable de session
     header("Refresh: 0;url=/");
@@ -40,6 +41,7 @@ if(!empty($_POST)) {
             $users = $requete->fetchAll();
         } else {
             header("Refresh: 0;url=/login.php?error=1");
+            die();
         }
 
         // Boucle sur les utilisateurs pour vérifier les identifiants
@@ -51,6 +53,7 @@ if(!empty($_POST)) {
                 $_SESSION['name_user'] = $user['name_user'];
                 $_SESSION['surname_user'] = $user['surname_user'];
                 $_SESSION['mail_user'] = $mail;
+                $_SESSION['isFormer'] = $isFormer;
                 // Redirection vers la page d'administration ('/admin')
                 header("Refresh: 0;url=/");
                 // Arrêt de l'exécution du script
@@ -58,6 +61,7 @@ if(!empty($_POST)) {
             } else {
                 // Redirection vers la page de connexion avec un message d'erreur ('error=0')
                 header("Refresh: 0;url=/login.php?error=0");
+                die();
             }
         }
     }
@@ -74,6 +78,9 @@ if(array_key_exists('error', $_GET)) {
     }
     if($_GET['error'] == '1') {
         $error_message = 'Case non cochée';
+    }
+    if($_GET['error'] == '2') {
+        $error_message = 'Connecter vous pour continuer';
     }
 }
 
