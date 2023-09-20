@@ -200,7 +200,6 @@ body {
 
                 & .nav-item {
                     margin: 0 1rem;
-                    width: 120px;
                     text-align: center;
                     transition: .4s;
                     margin-left: auto;
@@ -211,19 +210,19 @@ body {
                     }
 
                     &:first-child {
-                        border: solid 1px $bleu;
-                        padding: .5rem;
-                        border-radius: 25px;
-
+                        
                         & a {
+                            border: solid 1px $bleu;
+                            padding: .5rem;
+                            border-radius: 25px;
                             color: $bleu !important;
                         }
 
                         &:hover {
-                            border: solid 1px #fff;
-                            background: $bleuOp;
-
+                            
                             & a {
+                                border: solid 1px #fff;
+                                background: $bleuOp;
                                 color: #fff !important;
                             }
                         }
@@ -232,20 +231,20 @@ body {
                     
 
                     &:last-child {
-                        border: solid 1px #fff;
-                        padding: .5rem;
-                        border-radius: 25px;
-                        background: $bleu;
-
+                        
                         & a {
+                            border: solid 1px #fff;
+                            padding: .5rem 1.5rem;
+                            border-radius: 25px;
+                            background: $bleu;
                             color: #fff !important;
                         }
 
                         &:hover {
-                            border: solid 1px #fff;
-                            background: $bleuOp;
-
+                            
                             & a {
+                                border: solid 1px #fff;
+                                background: $bleuOp;
                                 color: #fff !important;
                             }
                         }

@@ -160,7 +160,6 @@ body {
 }
 .header .nav .nav-list .nav-list-right .nav-item {
   margin: 0 1rem;
-  width: 120px;
   text-align: center;
   transition: 0.4s;
   margin-left: auto;
@@ -169,35 +168,27 @@ body {
 .header .nav .nav-list .nav-list-right .nav-item a {
   transition: 0.4s;
 }
-.header .nav .nav-list .nav-list-right .nav-item:first-child {
+.header .nav .nav-list .nav-list-right .nav-item:first-child a {
   border: solid 1px #3fbef0;
   padding: 0.5rem;
   border-radius: 25px;
-}
-.header .nav .nav-list .nav-list-right .nav-item:first-child a {
   color: #3fbef0 !important;
 }
-.header .nav .nav-list .nav-list-right .nav-item:first-child:hover {
+.header .nav .nav-list .nav-list-right .nav-item:first-child:hover a {
   border: solid 1px #fff;
   background: rgba(63, 190, 240, 0.5215686275);
-}
-.header .nav .nav-list .nav-list-right .nav-item:first-child:hover a {
   color: #fff !important;
-}
-.header .nav .nav-list .nav-list-right .nav-item:last-child {
-  border: solid 1px #fff;
-  padding: 0.5rem;
-  border-radius: 25px;
-  background: #3fbef0;
 }
 .header .nav .nav-list .nav-list-right .nav-item:last-child a {
+  border: solid 1px #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  background: #3fbef0;
   color: #fff !important;
 }
-.header .nav .nav-list .nav-list-right .nav-item:last-child:hover {
+.header .nav .nav-list .nav-list-right .nav-item:last-child:hover a {
   border: solid 1px #fff;
   background: rgba(63, 190, 240, 0.5215686275);
-}
-.header .nav .nav-list .nav-list-right .nav-item:last-child:hover a {
   color: #fff !important;
 }
 
