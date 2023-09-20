@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+if(empty($_SESSION)) {
+    // Vérification si la clé 'isAdmin' existe dans la variable de session
+    header("Refresh: 0;url=/login.php?error=2");
+} else {
+    if($_SESSION['isFormer'] == 0) {
+        header("Refresh: 0;url=/");
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="/style/page-formation.css">

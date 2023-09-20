@@ -23,26 +23,15 @@ if(!empty($_SESSION)) {
 // Vérification si des données ont été envoyées via POST
 if(!empty($_POST)) {
     // Vérification si les clés 'mail' et 'password' existent dans les données POST
-    if(array_key_exists('mail', $_POST) and array_key_exists('password', $_POST) and array_key_exists('isFormer', $_POST)) {
+    if(array_key_exists('mail', $_POST) and array_key_exists('password', $_POST) ) {
         // Récupération des valeurs des champs 'mail' et 'password' avec la fonction htmlspecialchars() pour éviter les attaques XSS
         $mail = htmlspecialchars($_POST['mail']);
         $password = htmlspecialchars($_POST['password']);
-        $isFormer = htmlspecialchars($_POST['isFormer']);
 
-        if($isFormer == 0) {
-            // Requête pour récupérer tous les utilisateurs
-            $sql = "SELECT * FROM `users`";
-            $requete = $db->query($sql);
-            $users = $requete->fetchAll();
-        } else if($isFormer == 1) {
-            // Requête pour récupérer tous les utilisateurs
-            $sql = "SELECT * FROM `formers`";
-            $requete = $db->query($sql);
-            $users = $requete->fetchAll();
-        } else {
-            header("Refresh: 0;url=/login.php?error=1");
-            die();
-        }
+        // Requête pour récupérer tous les utilisateurs
+        $sql = "SELECT * FROM `users`";
+        $requete = $db->query($sql);
+        $users = $requete->fetchAll();
 
         // Boucle sur les utilisateurs pour vérifier les identifiants
         foreach($users as $user) {
@@ -53,7 +42,33 @@ if(!empty($_POST)) {
                 $_SESSION['name_user'] = $user['name_user'];
                 $_SESSION['surname_user'] = $user['surname_user'];
                 $_SESSION['mail_user'] = $mail;
-                $_SESSION['isFormer'] = $isFormer;
+                $_SESSION['isFormer'] = 0;
+                // Redirection vers la page d'administration ('/admin')
+                header("Refresh: 0;url=/");
+                // Arrêt de l'exécution du script
+                die();
+            } else {
+                // Redirection vers la page de connexion avec un message d'erreur ('error=0')
+                // header("Refresh: 0;url=/login.php?error=0");
+                // die();
+            }
+        }
+
+        // Requête pour récupérer tous les utilisateurs
+        $sql = "SELECT * FROM `formers`";
+        $requete = $db->query($sql);
+        $users = $requete->fetchAll();
+
+        // Boucle sur les utilisateurs pour vérifier les identifiants
+        foreach($users as $user) {
+            // Vérification de la correspondance entre l'adresse e-mail et le mot de passe avec ceux stockés en base de données
+            if($mail == $user['mail_former'] and password_verify($password, $user['password_former'])) {
+                // Début de la session et stockage des informations de l'utilisateur dans des variables de session
+                $_SESSION['id_former'] = $user['id_former'];
+                $_SESSION['name_former'] = $user['name_former'];
+                $_SESSION['surname_former'] = $user['surname_former'];
+                $_SESSION['mail_former'] = $mail;
+                $_SESSION['isFormer'] = 1;
                 // Redirection vers la page d'administration ('/admin')
                 header("Refresh: 0;url=/");
                 // Arrêt de l'exécution du script
@@ -134,20 +149,6 @@ if(array_key_exists('error', $_GET)) {
 
                     <input id="password" type="password" name="password" required>
                     <label id="password-label" class="form-login-label label-password label-active" for="password" >Mot de passe</label>
-
-                    <div class="radio-global-container">
-                        <div>Formateur ? :</div>
-                        <div class="radio-container">
-                            <div class="radio">
-                                <input id="isFormer0" type="radio" name="isFormer" value="0" required >
-                                <label class="form-login-label-radio" for="isFormer0">Non</label>
-                            </div>
-                            <div class="radio">
-                                <input id="isFormer1" type="radio" name="isFormer" value="1" required >
-                                <label class="form-login-label-radio" for="isFormer1">Oui</label>
-                            </div>
-                        </div>
-                    </div>
 
                     <a href="" class="forget-password">Mot de passe oublié ?</a>
                     <div class="error-message"><?php echo $error_message; ?></div>
