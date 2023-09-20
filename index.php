@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="/style/page-formation.css">
 <head>
     <?php include("php/head.php"); ?>
     <title>Workshop Sn2</title>
@@ -10,7 +11,9 @@
     </header>
     
     <main class="main">
-        
+        <div class="menu">
+            <p>okok</p>
+        </div>
     </main>
 
     <footer class="main">
