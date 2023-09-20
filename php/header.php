@@ -74,8 +74,14 @@
             <li class="nav-item logo"><a href="/" class="logo-txt">Learn IT</a></li>
         </div>
         <div class="nav-list-right">
-            <li class="nav-item"><a href="/login.php" class="">Se connecter</a></li>
-            <li class="nav-item"><a href="/sign-in.php" class="">S'inscrire</a></li>
+            <?php
+                if(!empty($_SESSION)) {
+                    echo "<li class=\"nav-item\"><a href=\"/login.php\" class=\"\">Mon espace</a></li>";
+                } else {
+                    echo "<li class=\"nav-item\"><a href=\"/login.php\" class=\"\">Se connecter</a></li>
+                    <li class=\"nav-item\"><a href=\"/sign-in.php\" class=\"\">S'inscrire</a></li>";
+                }
+            ?>
         </div>
     </ul>
 </div>
