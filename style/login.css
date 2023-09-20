@@ -1,1 +1,342 @@
-/*# sourceMappingURL=login.css.map */
+body {
+  overflow: hidden;
+}
+
+.main .form-login-global-container {
+  width: 500px;
+  height: 400px;
+  background: #fffaee;
+  border-radius: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  box-shadow: #b0b0b0 10px 10px 20px;
+  position: absolute;
+  left: calc((100vw - 500px) / 2);
+  top: calc((105vh - 400px) / 2);
+}
+.main .form-login-global-container .account-img {
+  width: 75px;
+  height: 75px;
+  border: solid 5px #648de5;
+  background: #648de5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.main .form-login-global-container .account-img img {
+  max-width: 45px;
+  margin-bottom: 0.8rem;
+}
+.main .form-login-global-container .form-login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.main .form-login-global-container .form-login-container .form-login {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.main .form-login-global-container .form-login-container .form-login input {
+  margin-bottom: 1rem;
+  outline: 0;
+  background: #fffaee;
+  border: none;
+  border-bottom: solid 1px #cfcbc3;
+  height: 2rem;
+  transition: 0.25s;
+}
+.main .form-login-global-container .form-login-container .form-login input:first-child {
+  margin-bottom: 2rem;
+}
+.main .form-login-global-container .form-login-container .form-login input:last-child {
+  border: solid 1px #cfcbc3;
+  border-radius: 10px;
+}
+.main .form-login-global-container .form-login-container .form-login input:last-child:hover {
+  background: rgba(100, 141, 229, 0.5019607843);
+}
+.main .form-login-global-container .form-login-container .form-login .form-login-label {
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  pointer-events: none;
+  transition: top 0.3s, left 0.3s, font-size 0.3s;
+}
+.main .form-login-global-container .form-login-container .form-login .form-login-label.label-password {
+  top: 66px;
+}
+.main .form-login-global-container .form-login-container .form-login input:focus + .form-login-label.label-mail {
+  top: -14px;
+  left: 6px;
+  font-size: 0.9rem;
+}
+.main .form-login-global-container .form-login-container .form-login input:focus + .form-login-label.label-password {
+  top: 49px;
+  left: 6px;
+  font-size: 0.9rem;
+}
+.main .form-login-global-container .form-login-container .form-login .forget-password {
+  font-size: 0.75rem;
+  color: #5a5a5a;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.main .form-login-global-container .form-login-container .form-login .forget-password:hover {
+  -webkit-text-decoration: underline #5a5a5a;
+          text-decoration: underline #5a5a5a;
+}
+.main .form-sign-in-global-container {
+  width: 500px;
+  height: 650px;
+  background: #fffaee;
+  border-radius: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  box-shadow: #b0b0b0 10px 10px 20px;
+  position: absolute;
+  left: calc((100vw - 500px) / 2);
+  top: calc((105vh - 650px) / 2);
+}
+.main .form-sign-in-global-container .account-img {
+  width: 75px;
+  height: 75px;
+  border: solid 5px #648de5;
+  background: #648de5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.main .form-sign-in-global-container .account-img img {
+  max-width: 45px;
+  margin-bottom: 0.8rem;
+}
+.main .form-sign-in-global-container .form-sign-in-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input {
+  margin-bottom: 2rem;
+  outline: 0;
+  background: #fffaee;
+  border: none;
+  border-bottom: solid 1px #cfcbc3;
+  height: 2rem;
+  transition: 0.25s;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:last-child {
+  border: solid 1px #cfcbc3;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:last-child:hover {
+  background: rgba(100, 141, 229, 0.5019607843);
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in .form-sign-in-label {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  pointer-events: none;
+  transition: top 0.3s, left 0.3s, font-size 0.3s;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in .form-sign-in-label.label-surname {
+  top: 72px;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in .form-sign-in-label.label-age {
+  top: 135px;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in .form-sign-in-label.label-level {
+  top: 200px;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in .form-sign-in-label.label-mail {
+  top: 265px;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in .form-sign-in-label.label-password {
+  top: 328px;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in .form-sign-in-label.label-verif-password {
+  top: 392px;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-name {
+  top: -14px;
+  left: 6px;
+  font-size: 0.9rem;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-surname {
+  top: 52px;
+  left: 6px;
+  font-size: 0.9rem;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-age {
+  top: 115px;
+  left: 6px;
+  font-size: 0.9rem;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-level {
+  top: 180px;
+  left: 6px;
+  font-size: 0.9rem;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-mail {
+  top: 245px;
+  left: 6px;
+  font-size: 0.9rem;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-password {
+  top: 308px;
+  left: 6px;
+  font-size: 0.9rem;
+}
+.main .form-sign-in-global-container .form-sign-in-container .form-sign-in input:focus + .form-sign-in-label.label-verif-password {
+  top: 372px;
+  left: 6px;
+  font-size: 0.9rem;
+}
+.main .circle-global-container .circle-top-container .circle {
+  border-radius: 50%;
+  position: absolute;
+}
+.main .circle-global-container .circle-top-container .circle:nth-child(1) {
+  background: #648DE5;
+  top: 226px;
+  left: -24px;
+  width: 197px;
+  height: 197px;
+}
+.main .circle-global-container .circle-top-container .circle:nth-child(2) {
+  background: #648DE5;
+  top: 61px;
+  left: 188px;
+  width: 197px;
+  height: 197px;
+}
+.main .circle-global-container .circle-top-container .circle:nth-child(3) {
+  background: #DEE7F9;
+  top: 181px;
+  left: 69px;
+  width: 153px;
+  height: 153px;
+}
+.main .circle-global-container .circle-top-container .circle:nth-child(4) {
+  background: #F4F7FD;
+  top: 55px;
+  left: 275px;
+  width: 120px;
+  height: 120px;
+}
+.main .circle-global-container .circle-top-container .circle:nth-child(5) {
+  background: #87A7EB;
+  top: 235px;
+  left: -28px;
+  width: 120px;
+  height: 120px;
+}
+.main .circle-global-container .circle-top-container .circle:nth-child(6) {
+  background: #A8BFF0;
+  top: 60px;
+  left: 164px;
+  width: 120px;
+  height: 120px;
+}
+.main .circle-global-container .circle-top-container .circle:nth-child(7) {
+  background: #A8BFF0;
+  top: 211px;
+  left: -28px;
+  width: 93px;
+  height: 93px;
+}
+.main .circle-global-container .circle-top-container .circle:nth-child(8) {
+  background: rgba(168, 191, 240, 0.7333333333);
+  top: 125px;
+  left: 144px;
+  width: 110px;
+  height: 110px;
+}
+.main .circle-global-container .circle-top-container .circle:nth-child(9) {
+  background: #C8D7F6;
+  top: 6px;
+  left: -51px;
+  width: 275px;
+  height: 275px;
+}
+.main .circle-global-container .circle-bottom-container .circle {
+  border-radius: 50%;
+  position: absolute;
+  overflow-y: hidden;
+}
+.main .circle-global-container .circle-bottom-container .circle:nth-child(1) {
+  background: #648DE5;
+  bottom: -109px;
+  right: -37px;
+  width: 375px;
+  height: 375px;
+}
+.main .circle-global-container .circle-bottom-container .circle:nth-child(2) {
+  background: #DEE7F9;
+  bottom: -58px;
+  right: -68px;
+  width: 275px;
+  height: 275px;
+}
+.main .circle-global-container .circle-bottom-container .circle:nth-child(3) {
+  background: rgba(135, 167, 235, 0.6901960784);
+  bottom: 240px;
+  right: -34px;
+  width: 92px;
+  height: 92px;
+}
+.main .circle-global-container .circle-bottom-container .circle:nth-child(4) {
+  background: rgba(100, 141, 229, 0.5137254902);
+  bottom: 191px;
+  right: 37px;
+  width: 112px;
+  height: 112px;
+}
+.main .circle-global-container .circle-bottom-container .circle:nth-child(5) {
+  background: #7C9FE9;
+  bottom: 156px;
+  right: -34px;
+  width: 120px;
+  height: 120px;
+}
+.main .circle-global-container .circle-bottom-container .circle:nth-child(6) {
+  background: #BECFF4;
+  bottom: 14px;
+  right: 297px;
+  width: 142px;
+  height: 142px;
+}
+.main .circle-global-container .circle-bottom-container .circle:nth-child(7) {
+  background: #F4F7FD;
+  bottom: -46px;
+  right: 377px;
+  width: 142px;
+  height: 142px;
+}
+.main .circle-global-container .circle-bottom-container .circle:nth-child(8) {
+  background: #7C9FE9;
+  bottom: -46px;
+  right: 244px;
+  width: 164px;
+  height: 164px;
+}/*# sourceMappingURL=login.css.map */

@@ -7,27 +7,74 @@
     <title>Menu déroulant</title>
 
     <style>
-        .a {
-            width: 10px;
-            height: 10px;
-            background: red;
-            position: relative;
-            top: 0;
-            left: 0;
+       .input-container {
+        position: relative;
+        margin: 20px;
         }
 
-        .b {
-            width: 30px;
-            height: 10px;
-            background: blue;
-            position: absolute;
-            top: 0;
-            left: 0;
+        .input-field {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
         }
+
+        .input-label {
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        pointer-events: none;
+        transition: top 0.3s, left 0.3s, font-size 0.3s;
+        font-size: 16px;
+        color: #999;
+        }
+
+        .input-field:focus + .input-label {
+        top: -8px;
+        left: 8px;
+        font-size: 12px;
+        color: #3498db;
+        }
+
+        /* Style facultatif pour mettre en évidence l'input actif */
+        .input-field:focus {
+        border-color: #3498db;
+        }
+
+
     </style>
 </head>
 <body>
-    <div class="a"></div>
-    <div class="b"></div>
+    <div class="input-container">
+        <input type="text" id="myInput" class="input-field" placeholder="">
+        <label for="myInput" class="input-label">Titre de l'Input</label>
+      </div>      
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const input = document.querySelector(".input-field");
+            const label = document.querySelector(".input-label");
+
+            input.addEventListener("focus", function () {
+                label.style.top = "-15px";
+                label.style.left = "8px";
+                label.style.fontSize = "12px";
+                label.style.color = "#3498db";
+            });
+
+            input.addEventListener("blur", function () {
+                if (input.value === "") {
+                label.style.top = "12px";
+                label.style.left = "15px";
+                label.style.fontSize = "16px";
+                label.style.color = "#999";
+                }
+            });
+        });
+
+
+    </script>
+      
 </body>
 </html>
