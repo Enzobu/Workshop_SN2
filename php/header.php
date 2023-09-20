@@ -9,27 +9,27 @@
                         <div class="formation-content">
                             <div class="title-formation-content">• Découverte</div>
                             <div class="txt-formation-content">
-                                Qu'est ce que l'informatique ? <br>
-                                Informatique : Par où Commencer ? <br>
-                                Comprendre Internet et la Navigation Web <br>
-                                Introduction à la Programmation pour Débutants
+                                <div class="formation-item">Qu'est ce que l'informatique ?</div>
+                                <div class="formation-item">Informatique : Par où Commencer ?</div>
+                                <div class="formation-item">Comprendre Internet et la Navigation Web</div>
+                                <div class="formation-item">Introduction à la Programmation pour Débutants</div>
                             </div>
                         </div>
                         <div class="formation-content">
                             <div class="title-formation-content">• Initiation au code</div>
                             <div class="txt-formation-content">
-                                Les bases de l'algorithmie <br>
-                                Introduction à la Programmation en Python <br>
-                                Les Bases de la Programmation Java <br>
-                                Les Fondamentaux du Codage HTML et CSS
+                                <div class="formation-item">Les bases de l'algorithmie</div>
+                                <div class="formation-item">Introduction à la Programmation en Python</div>
+                                <div class="formation-item">Les Bases de la Programmation Java</div>
+                                <div class="formation-item">Les Fondamentaux du Codage HTML et CSS</div>
                             </div>
                         </div>
                         <div class="formation-content">
                             <div class="title-formation-content">• Projet</div>
                             <div class="txt-formation-content">
-                                Votre premier site <br>
-                                Votre première appli <br>
-                                Votre premier jeu
+                                <div class="formation-item">Votre premier site</div>
+                                <div class="formation-item">Votre première appli</div>
+                                <div class="formation-item">Votre premier jeu</div>
                             </div>
                         </div>
                     </div>
@@ -43,27 +43,27 @@
                         <div class="formation-content">
                             <div class="title-formation-content">• Outils</div>
                             <div class="txt-formation-content">
-                                Qu'est ce que VScode <br>
-                                Qu'est ce que GitHub <br>
-                                Sur quelles plateformes coder ? <br>
-                                Bibliothèque de code
+                                <div class="formation-item">Qu'est ce que VScode</div>
+                                <div class="formation-item">Qu'est ce que GitHub</div>
+                                <div class="formation-item">Sur quelles plateformes coder ?</div>
+                                <div class="formation-item">Bibliothèque de code</div>
                             </div>
                         </div>
                         <div class="formation-content">
                             <div class="title-formation-content">• Communauté</div>
                             <div class="txt-formation-content">
-                                Meilleurs cours de la communauté <br>
-                                Forum <br>
-                                Groupe de discussion <br>
-                                Actualités informatique
+                                <div class="formation-item">Meilleurs cours de la communauté</div>
+                                <div class="formation-item">Forum</div>
+                                <div class="formation-item">Groupe de discussion</div>
+                                <div class="formation-item">Actualités informatique</div>
                             </div>
                         </div>
                         <div class="formation-content">
                             <div class="title-formation-content">• Qui sommes nous ?</div>
                             <div class="txt-formation-content">
-                                Qu'est ce que LearnlT ? <br>
-                                Notre projet <br>
-                                Nos motivations
+                                <div class="formation-item">Qu'est ce que LearnlT ?</div>
+                                <div class="formation-item">Notre projet</div>
+                                <div class="formation-item">Nos motivations</div>
                             </div>
                         </div>
                     </div>

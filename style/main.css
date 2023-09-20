@@ -93,8 +93,14 @@ body {
 }
 .header .nav .nav-list .nav-list-left .nav-item .dropdown-menu .formation-content-bottom .txt-formation-content {
   margin: 0.75rem 0 0 2rem;
+}
+.header .nav .nav-list .nav-list-left .nav-item .dropdown-menu .formation-content-bottom .txt-formation-content .formation-item {
   color: #fff;
-  line-height: 1.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.header .nav .nav-list .nav-list-left .nav-item .dropdown-menu .formation-content-bottom .txt-formation-content .formation-item:hover {
+  text-decoration: underline;
 }
 .header .nav .nav-list .nav-list-left .nav-item .menu-formations {
   left: -48px;

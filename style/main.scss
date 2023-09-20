@@ -104,8 +104,16 @@ body {
 
                             & .txt-formation-content {
                                 margin: .75rem 0 0 2rem;
-                                color: #fff;
-                                line-height: 1.5rem;
+
+                                & .formation-item {
+                                    color: #fff;
+                                    margin-top: .5rem;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
                             }
 
                         }
