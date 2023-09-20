@@ -92,13 +92,6 @@ body {
                         text-decoration: underline #5a5a5a;
                     }
                 }
-
-                & .label-active {
-                    top: -8px; /* Déplace le label vers le haut */
-                    left: 8px; /* Déplace le label vers la gauche (ajustez selon vos besoins) */
-                    font-size: 12px; /* Réduire la taille de la police du label */
-                    color: #3498db; /* Couleur du texte du label actif (ajustez selon vos besoins) */
-                }
             }
         }
     }
@@ -192,48 +185,6 @@ body {
                     &.label-verif-password {
                         top: 392px;
                     }
-                }
-
-                input:focus + .form-sign-in-label.label-name {
-                    top: -14px;
-                    left: 6px;
-                    font-size: .9rem;
-                }
-
-                input:focus + .form-sign-in-label.label-surname {
-                    top: 52px;
-                    left: 6px;
-                    font-size: .9rem;
-                }
-
-                input:focus + .form-sign-in-label.label-age {
-                    top: 115px;
-                    left: 6px;
-                    font-size: .9rem;
-                }
-
-                input:focus + .form-sign-in-label.label-level {
-                    top: 180px;
-                    left: 6px;
-                    font-size: .9rem;
-                }
-
-                input:focus + .form-sign-in-label.label-mail {
-                    top: 245px;
-                    left: 6px;
-                    font-size: .9rem;
-                }
-
-                input:focus + .form-sign-in-label.label-password {
-                    top: 308px;
-                    left: 6px;
-                    font-size: .9rem;
-                }
-
-                input:focus + .form-sign-in-label.label-verif-password {
-                    top: 372px;
-                    left: 6px;
-                    font-size: .9rem;
                 }
             }
         }
