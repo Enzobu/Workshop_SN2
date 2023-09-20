@@ -12,6 +12,10 @@
   color: #000000;
 }
 
+body {
+  overflow-X: hidden;
+}
+
 .header {
   position: fixed;
   width: 100vw;
