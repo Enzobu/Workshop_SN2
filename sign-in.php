@@ -152,7 +152,7 @@ if(array_key_exists('error', $_GET)) {
                     </div>
 
                     <div class="error-message"><?php echo $error_message; ?></div>
-                    <input type="submit" value="Se connecter">
+                    <input type="submit" value="S'inscrire">
                 </form>
             </div>
         </div>

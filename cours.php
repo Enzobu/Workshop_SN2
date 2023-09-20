@@ -60,7 +60,7 @@ if(empty($_SESSION)) {
                         <br>
                     </div>
                     <h3>Explication</h3>
-                    <h4>description de l'Exercice</h4>
+                    <h4>Description de l'Exercice</h4>
                     <ul class="liste-exp">
                         <li>Écrivez un algorithme simple qui prend deux nombres en entrée, les additionne, puis affiche le résultat.</li>
                         <li>Instructions :
