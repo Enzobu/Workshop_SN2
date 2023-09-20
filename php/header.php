@@ -76,7 +76,7 @@
         <div class="nav-list-right">
             <?php
                 if(!empty($_SESSION)) {
-                    echo "<li class=\"nav-item\"><a href=\"/login.php\" class=\"\">Mon espace</a></li>";
+                    echo "<li class=\"nav-item\"><a href=\"/user_profile.php\" class=\"\">Mon espace</a></li>";
                 } else {
                     echo "<li class=\"nav-item\"><a href=\"/login.php\" class=\"\">Se connecter</a></li>
                     <li class=\"nav-item\"><a href=\"/sign-in.php\" class=\"\">S'inscrire</a></li>";
