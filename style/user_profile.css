@@ -1,0 +1,82 @@
+.block-1 {
+  width: 100%;
+  height: 100px;
+  background-color: #3FBEF0;
+  position: relative;
+  top: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.block-1 h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 50px;
+  font-weight: 400;
+}
+
+.content {
+  display: flex;
+}
+
+.content .left-menu {
+  width: 300px;
+  height: 550px;
+  position: relative;
+  border-right: solid 2px rgba(96, 96, 96, 0.6666666667);
+  top: -5px;
+  padding-top: 25px;
+}
+
+.content .right-content {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  top: -5px;
+}
+
+.content .left-menu li:first-child {
+  height: 50px;
+  background-color: #3FBEF0;
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+.content .left-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  font-size: larger;
+  font-weight: 300;
+  transition: all ease 0.5s;
+  border-radius: 10px;
+}
+
+.content .right-content {
+  display: flex;
+}
+
+.content .right-content img {
+  width: 261px;
+  height: 217px;
+  margin: 25px 50px 0 25px;
+  transition: all ease 0.5s;
+}
+
+.content .right-content img:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.content .left-menu li:hover {
+  background-color: rgba(73, 73, 73, 0.225);
+  scale: 1.05;
+}
+
+.content .left-menu li:first-child:hover {
+  background-color: rgba(63, 190, 240, 0.6666666667);
+}/*# sourceMappingURL=user_profile.css.map */
