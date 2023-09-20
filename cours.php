@@ -51,17 +51,19 @@
                     </div>
                     <h3>Explication</h3>
                     <h4>description de l'Exercice</h4>
-                    <div class="liste-exp">
+                    <ul class="liste-exp">
                         <li>Écrivez un algorithme simple qui prend deux nombres en entrée, les additionne, puis affiche le résultat.</li>
                         <li>Instructions :
-                            <li class="lis">Demandez à l'utilisateur de saisir le deuxième nombre (numéro 2).</li>
-                            <li class="lis">Demandez à l'utilisateur de saisir le premier nombre (numéro 1).</li>
-                            <li class="lis">Calculez la somme des deux nombres en utilisant une variable (somme).</li>
-                            <li class="lis">Affichez le résultat de la somme à l'écran.</li>
+                            <ul>
+                                <li class="lis">Demandez à l'utilisateur de saisir le deuxième nombre (numéro 2).</li>
+                                <li class="lis">Demandez à l'utilisateur de saisir le premier nombre (numéro 1).</li>
+                                <li class="lis">Calculez la somme des deux nombres en utilisant une variable (somme).</li>
+                                <li class="lis">Affichez le résultat de la somme à l'écran.</li>
+                            </ul>
                         </li>
-                        <p>3. Exemple :</p>
+                        <li>Exemple :</li>
                         <img src="/images/exo.png" alt="">
-                    </div>
+                        </ul>
                 </div>
                 <div class="rc3">
                     <p>La structuration d'un algorithme est une compétence essentielle pour tout développeur en herbe. Elle sert de base à la résolution efficace de problèmes informatiques et à la création de programmes fonctionnels. Dans cette leçon, nous avons exploré les principes fondamentaux pour vous aider à démarrer. Cependant, si vous souhaitez aller plus loin et affiner vos compétences en structuration d'algorithmes, voici quelques ressources supplémentaires à explorer :<br><br><br>

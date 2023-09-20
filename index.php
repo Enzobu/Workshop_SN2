@@ -31,7 +31,7 @@ session_start();
             </div>
             <div class="block-2-right">
                 <p>Profitez de centaines de leçons gratuites et pour tous les niveaux.</p>
-                <button>Go fo IT</button>
+                <button><a href="/user_profile.php" class="go-for-it">Go fo IT</a></button>
             </div>
         </div>
         <div class="block-3">
