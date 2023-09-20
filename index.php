@@ -11,9 +11,7 @@
     </header>
     
     <main class="main">
-        <div class="menu">
-            <p>okok</p>
-        </div>
+        
     </main>
 
     <footer class="main">
