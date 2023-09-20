@@ -42,15 +42,16 @@
             <div class="form-login-container">
                 <form action="" class="form-login" method="POST">
                     <input id="mail" type="mail">
-                    <label class="form-login-label label-mail" for="mail">Email</label>
+                    <label id="mail-label" class="form-login-label label-mail label-active" for="mail">Email</label>
                     <input id="password" type="password">
-                    <label class="form-login-label label-password" for="password">Mot de passe</label>
+                    <label id="password-label" class="form-login-label label-password label-active" for="password">Mot de passe</label>
                     <a href="" class="forget-password">Mot de passe oublié ?</a>
                     <input type="submit" value="Se connecter">
                 </form>
             </div>
         </div>
 
+        <script src="/js/formLogin.js"></script>
     </main>
 
     <footer class="main">

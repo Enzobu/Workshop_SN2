@@ -82,18 +82,6 @@ body {
                     }
                 }
 
-                input:focus + .form-login-label.label-mail {
-                    top: -14px;
-                    left: 6px;
-                    font-size: .9rem;
-                }
-
-                input:focus + .form-login-label.label-password {
-                    top: 49px;
-                    left: 6px;
-                    font-size: .9rem;
-                }
-
                 & .forget-password {
                     font-size: .75rem;
                     color: #5a5a5a;
@@ -103,6 +91,13 @@ body {
                     &:hover {
                         text-decoration: underline #5a5a5a;
                     }
+                }
+
+                & .label-active {
+                    top: -8px; /* Déplace le label vers le haut */
+                    left: 8px; /* Déplace le label vers la gauche (ajustez selon vos besoins) */
+                    font-size: 12px; /* Réduire la taille de la police du label */
+                    color: #3498db; /* Couleur du texte du label actif (ajustez selon vos besoins) */
                 }
             }
         }
