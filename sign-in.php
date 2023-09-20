@@ -42,25 +42,25 @@
             <div class="form-sign-in-container">
                 <form action="" class="form-sign-in" method="POST">
 
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
                     <label id="name-label" class="form-sign-in-label label-name" for="name">Nom</label>
 
-                    <input type="text" id="surname" name="surname">
+                    <input type="text" id="surname" name="surname" required>
                     <label id="surname-label" class="form-sign-in-label label-surname" for="surname">Prenom</label>
 
-                    <input type="int" id="age" name="age">
+                    <input type="int" id="age" name="age" required>
                     <label id="age-label" class="form-sign-in-label label-age" for="age">Âge</label>
 
-                    <input type="text" id="level" name="level">
+                    <input type="text" id="level" name="level" required>
                     <label id="level-label" class="form-sign-in-label label-level" for="level">Niveau</label>
 
-                    <input type="mail" id="mail" name="mail">
+                    <input type="mail" id="mail" name="mail" required>
                     <label id="mail-label" class="form-sign-in-label label-mail" for="mail">Email</label>
 
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
                     <label id="password-label" class="form-sign-in-label label-password" for="password">Mot de passe</label>
 
-                    <input type="verif-password" id="verif-password" name="verif-password">
+                    <input type="verif-password" id="verif-password" name="verif-password" required>
                     <label id="verif-password-label" class="form-sign-in-label label-verif-password" for="verif-password">Mot de passe</label>
 
                     <input type="submit" value="Se connecter">
