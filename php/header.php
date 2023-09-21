@@ -1,35 +1,35 @@
 <div class="nav">
     <ul class="nav-list" id="nav">
         <div class="nav-list-left">
-            <li class="nav-item"><a href="" class="nav-link">Formations <div class="triangle"></div> </a>
+            <li class="nav-item"><a href="/user_profile" class="nav-link">Formations <div class="triangle"></div> </a>
                 <div class="dropdown-menu-cache"></div>
                 <div class="dropdown-menu menu-formations">
-                    <div class="formation-content-top"><p>Formations <span class="baumans-font">Learn IT</span></p></div>
+                    <div class="formation-content-top"><a href=""><p>Formations <span class="baumans-font">Learn IT</span></p></a></div>
                     <div class="formation-content-bottom">
                         <div class="formation-content">
                             <div class="title-formation-content">• Découverte</div>
                             <div class="txt-formation-content">
-                                <div class="formation-item">Qu'est ce que l'informatique ?</div>
-                                <div class="formation-item">Informatique : Par où Commencer ?</div>
-                                <div class="formation-item">Comprendre Internet et la Navigation Web</div>
-                                <div class="formation-item">Introduction à la Programmation pour Débutants</div>
+                                <a href=""><div class="formation-item">Qu'est ce que l'informatique ?</div></a>
+                                <a href=""><div class="formation-item">Informatique : Par où Commencer ?</div></a>
+                                <a href=""><div class="formation-item">Comprendre Internet et la Navigation Web</div></a>
+                                <a href=""><div class="formation-item">Introduction à la Programmation pour Débutants</div></a>
                             </div>
                         </div>
                         <div class="formation-content">
                             <div class="title-formation-content">• Initiation au code</div>
                             <div class="txt-formation-content">
-                                <div class="formation-item">Les bases de l'algorithmie</div>
-                                <div class="formation-item">Introduction à la Programmation en Python</div>
-                                <div class="formation-item">Les Bases de la Programmation Java</div>
-                                <div class="formation-item">Les Fondamentaux du Codage HTML et CSS</div>
+                                <a href="/cours"><div class="formation-item">Les bases de l'algorithmie</div></a>
+                                <a href=""><div class="formation-item">Introduction à la Programmation en Python</div></a>
+                                <a href=""><div class="formation-item">Les Bases de la Programmation Java</div></a>
+                                <a href=""><div class="formation-item">Les Fondamentaux du Codage HTML et CSS</div></a>
                             </div>
                         </div>
                         <div class="formation-content">
                             <div class="title-formation-content">• Projet</div>
                             <div class="txt-formation-content">
-                                <div class="formation-item">Votre premier site</div>
-                                <div class="formation-item">Votre première appli</div>
-                                <div class="formation-item">Votre premier jeu</div>
+                                <a href=""><div class="formation-item">Votre premier site</div></a>
+                                <a href=""><div class="formation-item">Votre première appli</div></a>
+                                <a href=""><div class="formation-item">Votre premier jeu</div></a>
                             </div>
                         </div>
                     </div>

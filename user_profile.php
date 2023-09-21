@@ -32,8 +32,8 @@ if(empty($_SESSION)) {
                 <li>Les Fondamentaux du Codage HTML et CSS</li>
             </div>
             <div class="right-content">
-                <img src="/images/capt1" alt="">
-                <img src="/images/capt2" alt="">
+                <a href="/cours"><img src="/images/capt1" alt=""></a>
+                <a href=""><img src="/images/capt2" alt=""></a>
             </div>
         </div>
     </main>
