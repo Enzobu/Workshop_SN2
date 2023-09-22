@@ -51,7 +51,7 @@ if(!empty($_POST)) {
                 header("Refresh: 0;url=/");
                 die();
             } else {
-                header("Refresh: 0;url=/login.php?error=1");
+                header("Refresh: 0;url=/signi-in.php?error=1");
                 die();
             }
         }
