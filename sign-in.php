@@ -1,6 +1,6 @@
 <?php
-include("php/link_db.php");
-session_start();
+// include("php/link_db.php");
+// session_start();
 // Vérification si la variable de session '$_SESSION' est définie
 
 if(!empty($_SESSION)) {
@@ -114,7 +114,7 @@ if(array_key_exists('error', $_GET)) {
                 <img src="/images/account.svg" alt="Account illustration">
             </div>
             <div class="form-sign-in-container">
-                <form action="" class="form-sign-in" method="POST">
+                <form action="" class="form-sign-in" method="">
 
                     <input type="text" id="name" name="name" required>
                     <label id="name-label" class="form-sign-in-label label-name" for="name">Nom</label>

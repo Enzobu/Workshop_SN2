@@ -18,7 +18,7 @@
                         <div class="formation-content">
                             <div class="title-formation-content">• Initiation au code</div>
                             <div class="txt-formation-content">
-                                <a href="/cours"><div class="formation-item">Les bases de l'algorithmie</div></a>
+                                <a href="/cours.php"><div class="formation-item">Les bases de l'algorithmie</div></a>
                                 <a href=""><div class="formation-item">Introduction à la Programmation en Python</div></a>
                                 <a href=""><div class="formation-item">Les Bases de la Programmation Java</div></a>
                                 <a href=""><div class="formation-item">Les Fondamentaux du Codage HTML et CSS</div></a>

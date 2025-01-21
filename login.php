@@ -1,6 +1,6 @@
 <?php
-include("php/link_db.php");
-session_start();
+// include("php/link_db.php");
+// session_start();
 // Vérification si la variable de session '$_SESSION' est définie
 
 // Vérification si des données ont été envoyées via GET
@@ -144,7 +144,7 @@ if(array_key_exists('error', $_GET)) {
                 <img src="/images/account.svg" alt="Account illustration">
             </div>
             <div class="form-login-container">
-                <form action="" class="form-login" method="POST">
+                <form action="" class="form-login" method="">
                     <input id="mail" type="mail" name="mail" required>
                     <label id="mail-label" class="form-login-label label-mail label-active" for="mail">Email</label>
 
